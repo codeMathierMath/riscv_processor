@@ -1,6 +1,6 @@
 # riscv_processor
 
-Two-cycle RISC-V processor supporting R-, I-, and B-type instructions. Built in CircuitVerse for COSC 175 (Digital Design) at Amherst College.
+Two-cycle RISC-V processor supporting R-, I-, and B-type instructions. Built in CircuitVerse.
 
 ---
 
@@ -14,9 +14,9 @@ The EEPROM comes preloaded with `rib_test.s`. Open the link and click the clock 
 
 ## Overview
 
-This processor implements a two-cycle fetch/execute architecture for a subset of the RISC-V ISA. It was designed collaboratively by a six-person team over approximately three weeks. The team divided into subteams (ALU, Control Unit, Memory, BCU/PC/IR). Liam designed the overall architecture, produced the initial datapath sketches, coordinated the subteams, built the Control Unit, and performed all integration of the individual components into the final circuit.
+This processor implements a two-cycle fetch/execute architecture for a subset of the RISC-V ISA. It was designed collaboratively by a six-person team over approximately three weeks. The team divided into subteams (ALU, Control Unit, Memory, BCU/PC/IR). Liam designed the overall architecture, produced the initial datapath sketches, coordinated the subteams, built the Control Unit, wrote datapath expectations sheet based on test assembly, and performed all integration of the individual components into the final circuit.
 
-Team: Liam (architecture, CU, integration), Madalina (CU subteam; wrote the initial test assembly program which `rib_test_expectations.csv` is based on), Fhares (main memory/EEPROM), Jing, Ally, Sofia. Register file designed by Teddy (Amherst College).
+Team: Liam (architecture, CU, integration), Madalina (CU subteam; built I and R-Type ROMs for CU and wrote the initial test assembly program which `rib_test_expectations.csv` is based on), Fhares (main memory/EEPROM), Jing (ALU), Ally (BCU + PC + IR), and Sofia (main memory subteam). Register file designed by Teddy (Amherst College).
 
 ---
 
