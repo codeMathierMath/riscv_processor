@@ -39,13 +39,13 @@ The Cycle-Counter Control subsystem gates PCWE, IRWE, RFWE, and MMaddrMux based 
 
 | Component | Description | Builder |
 |---|---|---|
-| PC | 32-bit program counter with +4 increment and branch target mux | Ally |
+| PC | 32-bit program counter with +4 increment and branch target mux | Ally + Liam |
 | IR | Instruction register; holds fetched instruction through execute cycle | Ally |
 | Register File | 32 D-flip-flops; rs1/rs2/rd selected by MUX; RFWE-gated write | Teddy |
-| ALU | Supports add, sub, and, or, xor; comparison outputs (A=B, A<B) for branches | Jing |
+| ALU | Supports add, sub, and, or, xor; comparison outputs (A=B, A<B) for branches | Jing + Liam |
 | Main Memory | EEPROM with MMaddrMux (selects between PC and ALU output); DI/DO ports | Fares |
 | Control Unit | Comparator → encoder → MUX architecture; includes Cycle-Counter Control | Liam + Madalina |
-| BCU | Branch Control Unit; evaluates branch condition using funct3 and ALU comparison | Ally |
+| BCU | Branch Control Unit; evaluates branch condition using funct3 and ALU comparison | Ally + Liam|
 
 ---
 
