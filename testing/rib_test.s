@@ -1,9 +1,7 @@
 # rib_test.s
 # R-, I-, and B-type instruction test program for the two-cycle RISC-V processor.
-# Original assembly by Madalina (CU subteam). Technical comments and B-type
-# extension added during integration. This program is preloaded into the
-# circuit's EEPROM; use rib_test_expectations.csv to verify datapath state.
-#
+# Original assembly by Madalina (CU subteam). This file was created by Claude Code but based on the assembly from a .csv (Google Sheet) encapsulating expectations across the datapath during the .s test program.
+# This program is preloaded into the circuit's EEPROM; use rib_test_expectations.csv to verify datapath state.
 # How to run: open https://circuitverse.org/simulator/processor_ribinstr
 # and click the clock button. Odd ticks = Fetch, even ticks = Execute.
 # Compare labeled probe outputs against rib_test_expectations.csv row by row.
