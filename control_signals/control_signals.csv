@@ -1,0 +1,17 @@
+Instruction,ALUop,ALU BinMux,RFWE,RFinMux,MMWE,ImmMux,PCWE,IRWE,MMaddrMux,BCUop
+addi,"0,0,0",1,1,1,0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+andi,"0,1,0",1,1,1,0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+xori,110,1,1,1,0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+ori,100,1,1,1,0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+add,"0,0,0",0,1,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+sub,"0,0,1",0,1,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+and,"0,1,0",0,1,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+xor,110,0,1,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+or,100,0,1,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+beq,"0,0,1 (sub)",0,0,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,100
+bne,"0,0,1 (sub)",0,0,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,101
+blt,"0,0,1 (sub)",0,0,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,110
+bge,"0,0,1 (sub)",0,0,1,0,don't care,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,111
+lw,"0,0,0 (addi)",1,1,0,0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+sw,"0,0,0 (addi)",1,0,1,1,0,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
+jalr,"0,0,0 (addi)",1,1,PC+4 (link address),0,1,Cycle Counter Controlled,Cycle Counter Controlled,Cycle Counter Controlled,0xx
