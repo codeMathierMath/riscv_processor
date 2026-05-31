@@ -51,7 +51,7 @@ The Cycle-Counter Control subsystem gates PCWE, IRWE, RFWE, and MMaddrMux based 
 
 ## Control Unit Design
 
-The CU uses a comparator-based approach rather than a single large EEPROM:
+The CU uses a comparator->encoder->constantsSelectedFromMux based approach rather than a single large EEPROM:
 
 1. Opcode is compared against known I-type, R-type, B-type, and S-type constants using dedicated "Equals X-Type" comparators.
 2. Comparator outputs feed an encoder, producing a type selector signal.
@@ -112,3 +112,5 @@ There are two test programs.
 ## Docs
 
 Design sketches (datapath, ALU, CU, Cycle-Counter, BCU) will be added to `docs/`. These are the original hand-drawn diagrams produced at the start of the project, uploaded to the team's shared working document and used to coordinate subteam builds.
+
+Prompts to Claude Code will be added to 'docs/'. Note that this was a by-hand school project with AI documentation and presentation after the fact.
